@@ -1,33 +1,37 @@
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
+.cover {
+  height: 267px;
+  width: 100%;
+  background-image: url("https://images.sharefaith.com/images/3/1357769977215_16/img_mouseover3.jpg");
+  background-size: cover;
+  border-bottom: 4px solid #4CAF50;
 }
 
-li {
-  float: left;
+.section {
+  margin: 2rem 2rem 2rem;
 }
 
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
+.feed {
+  display: -webkit-box;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
+.article {
+  width: 33%;
+  margin-right: 3%;
+  height: 300px;
+  border: 1px solid #111111;
 }
 
-.active {
-  background-color: #4CAF50;
+@media screen and (max-width: 1080px) {
+  .article {
+    width: 50%;
+  }
 }
 
-.button-test {
-  margin-top: 10px;
-  margin-top: 10px;
-  float: right;
+@media screen and (max-width: 690px) {
+  .article {
+    width: 100%;
+  }
+  .feed {
+    display: block;
+  }
 }

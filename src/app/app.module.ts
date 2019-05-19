@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import {MatButtonModule} from '@angular/material';
+import {MatButtonModule, MatCardModule} from '@angular/material';
 
 @NgModule({
   declarations: [
@@ -15,6 +15,7 @@ import {MatButtonModule} from '@angular/material';
     BrowserModule,
     AppRoutingModule,
     MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
