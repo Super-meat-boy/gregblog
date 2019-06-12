@@ -7,29 +7,33 @@
 }
 
 .section {
-  margin: 2rem 2rem 2rem;
+  margin: 2rem 2rem 2rem 2rem;
 }
 
 .feed {
-  display: -webkit-box;
+  display: flex;
+  flex-direction: row;
 }
 
 .article {
-  width: 33%;
+  width: 30%;
   margin-right: 3%;
   height: 300px;
   border: 1px solid #111111;
 }
 
-@media screen and (max-width: 1080px) {
+
+
+@media screen and (max-width: 1000px) {
   .article {
-    width: 50%;
+    width: 45%;
   }
 }
 
-@media screen and (max-width: 690px) {
+@media screen and (max-width: 650px) {
   .article {
     width: 100%;
+    margin-bottom: 5vh;
   }
   .feed {
     display: block;
